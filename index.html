@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang=it>
+<head>
+<link rel=stylesheet href=http://getskeleton.com/dist/css/skeleton.css>
+<title>Form in HTML + Js</title>
+<meta charset=utf-8>
+</head>
+<body>
+<div class=container>
+<div class=row>
+<div class="twelve columns"></div>
+<!-- L'utente inserisce il proprio nome in un input box (testo), conferma cliccando su un button l'applicazione lo saluta chiamandolo per nome
+-->
+<center>
+<h1>saluta</h1>
+<img src="/home/studente/Scaricati/appibrida/ok.jpeg">
+<p>Inserisic il tuo nome, la app ti salutera'</p>
+<form name=saluto>
+<input type=text name=none placeholder="scrivi il tuo nome" required>
+<input type=reset value=Annulla onclick=> &nbsp;
+<button type=button onclick=>Saluta</button>
+<p id=risposta></p>
+
+
+</form>
+</center>
+</div>
+<script>
+function saluta (){
+	var nome=document.forms[0].nome.value
+	document.getElementById("risposta").innetHTML="Ciao"+nome+", come va?";
+	}
+function annulla(){
+	document.getElementById("risposta").innetHTML=
+	}
+</script>
+</body>
+</html>
